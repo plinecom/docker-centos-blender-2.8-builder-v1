@@ -48,6 +48,9 @@ RUN wget https://github.com/01org/tbb/archive/2019_U1.tar.gz \
 RUN sed -i -e "s/6\.1810/5\.1810/" /etc/redhat-release
 
 # Get the source
+RUN wget https://download.blender.org/source/blender-2.80.tar.gz \
+ && tar xf blender-2.80.tar.gz
+
 #RUN mkdir $HOME/blender-git \
 # && cd $HOME/blender-git \
 # && git clone https://git.blender.org/blender.git \

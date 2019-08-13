@@ -2,8 +2,7 @@
 
 yum -y update
 
-cd $HOME/blender-git/blender
-make update
+cd $HOME/blender-*/
 
 ./build_files/build_environment/install_deps.sh --no-confirm --build-boost --force-oiio
 cp -R /opt/lib/oiio-*/lib64/* /usr/lib64/
